@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.MainActivity">
+
+    <EditText
+        android:id="@+id/EtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="106dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtClave"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="106dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Clave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtUsuario" />
+
+    <Button
+        android:id="@+id/BtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="162dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtClave" />
+
+    <Button
+        android:id="@+id/BtRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="157dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtLogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
